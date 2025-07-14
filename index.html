@@ -155,7 +155,7 @@
     const cuentaRegresiva = document.getElementById("cuentaRegresiva");
     const barraVolumen = document.getElementById("volumen");
 
-    const fechaPartido = new Date("July 11, 2025 11:00:00").getTime();
+    const fechaPartido = new Date("July 14, 2025 12:00:00").getTime();
 
     function iniciarCuentaRegresiva() {
       const interval = setInterval(function () {
@@ -164,7 +164,7 @@
 
         if (tiempoRestante <= 0) {
           clearInterval(interval);
-          cuentaRegresiva.innerHTML = "11 Julio 2025 11:00";
+          cuentaRegresiva.innerHTML = "14 Julio 2025 12:00";
         } else {
           const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
           const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
