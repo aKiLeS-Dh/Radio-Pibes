@@ -155,7 +155,7 @@
     const cuentaRegresiva = document.getElementById("cuentaRegresiva");
     const barraVolumen = document.getElementById("volumen");
 
-    const fechaPartido = new Date("July 14, 2025 12:00:00").getTime();
+    const fechaPartido = new Date("July 16, 2025 22:00:00").getTime();
 
     function iniciarCuentaRegresiva() {
       const interval = setInterval(function () {
@@ -164,13 +164,13 @@
 
         if (tiempoRestante <= 0) {
           clearInterval(interval);
-          cuentaRegresiva.innerHTML = "14 Julio 2025 12:00";
+          cuentaRegresiva.innerHTML = "16 Julio 2025 22:00";
         } else {
           const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
           const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
           const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
-          cuentaRegresiva.innerHTML = `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+          cuentaRegresiva.innerHTML = `EDIT EN ${dias}d ${horas}h ${minutos}m ${segundos}s`;
         }
       }, 1000);
     }
